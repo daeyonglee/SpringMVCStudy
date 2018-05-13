@@ -1,0 +1,183 @@
+2018-05-08 10:10:30 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:10:30 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:10:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:10:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:10:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:10:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:10:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:10:31 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:19:56 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:19:56 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:19:56 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:19:56 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:19:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:19:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:19:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:19:57 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:20:46 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:20:46 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:20:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:20:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:20:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:20:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:20:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:20:47 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:21:47 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:21:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:21:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:21:48 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:21:48 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:21:48 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:21:48 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:21:48 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:22:18 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:22:18 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 AND 1=1 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:22:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:22:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:22:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:22:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:22:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:22:19 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:23:18 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:23:19 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:23:19 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:23:34 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 1(Integer) 
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5121, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5120, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5119, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5118, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5116, title=123, content=432, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5115, title=하이, content=하이루, writer=사종찬, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5114, title=이대용은 짜이요, content=짜이요, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5113, title=되따, content=그래따, writer=나다, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:23:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:23:35 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:25:25 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:25:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 AND content LIKE CONCAT('%', ?, '%') ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:25:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 쥐(String), 1(Integer) 
+2018-05-08 10:35:32 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:35:32 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 AND content LIKE '%' || ? || '%' ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:35:33 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 쥐(String), 1(Integer) 
+2018-05-08 10:35:33 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 0 
+2018-05-08 10:35:33 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:35:33 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:35:33 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:35:33 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:35:33 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 AND title LIKE '%' || ? || '%' ORDER BY bno desc )) WHERE page = ?  
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 쥐(String), 1(Integer) 
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5107, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5102, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5097, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5092, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5087, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5082, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5077, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5072, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:35:41 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:35:41 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:118] ====================================== 
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT rn , bno , title , content , writer , to_char(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate , viewcnt FROM (SELECT CEIL(rn / ?) as page , rn , bno , title , content , writer , regdate , viewcnt FROM (SELECT rownum as rn , bno , title , content , writer , regdate , viewcnt FROM board WHERE bno > 0 AND title LIKE '%' || ? || '%' ORDER BY bno desc ) ) WHERE page = ?  
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 10(Integer), 쥐(String), 1(Integer) 
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 10 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5117, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5112, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5107, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5102, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5097, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5092, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5087, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5082, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5077, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:123] Board [bno=5072, title=쥐료똬, content=좌료똬, writer=423, regdate=2018-05-04 12:12:41, viewcnt=0] 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:126] ====================================== 
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT COUNT(bno) FROM board WHERE bno > 0  
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-08 10:39:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-08 10:39:35 [INFO ] [or.kosta.springmvc.board.BoardTest:128] COUNT: 5120 

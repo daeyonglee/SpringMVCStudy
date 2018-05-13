@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="kr.or.kosta.springmvc.board.MybatisReplyDAO">
+
+	<select id="list" resultType="kr.or.kosta.springmvc.board.domain.Reply">
+		SELECT rno
+		     , bno
+		     , replytext
+		     , replyer
+		     , regdate
+		     , updatedate
+		  FROM reply
+		 WHERE bno = #{bno}
+		 ORDER BY rno DESC
+	</select>
+	
+	<insert id="create" parameterType="kr.or.kosta.springmvc.board.domain.Reply">
+		INSERT INTO reply (
+		     	   rno
+		     	 , bno
+		     	 , replytext
+		     	 , replyer
+		       ) VALUES (
+		         reply_rno_seq.nextval
+		       , #{bno}
+		       , #{replytext}
+		       , #{replyer}
+		       )
+	</insert>
+	
+	<update id="update" parameterType="kr.or.kosta.springmvc.board.domain.Reply">
+		UPDATE reply
+		   SET replytext = #{replytext}
+		     , updatedate = sysdate
+		 WHERE rno = #{rno}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+	  DELETE
+	    FROM reply
+	   WHERE rno = #{rno}
+	</delete>
+	
+	<select id="listPage" parameterType="map" resultType="kr.or.kosta.springmvc.board.domain.Reply">
+		SELECT rn
+		     , rno
+		     , bno
+		     , replytext
+		     , replyer
+		     , TO_CHAR(regdate, 'YYYY-MM-DD HH24:mi:ss') regdate
+		     , TO_CHAR(updatedate, 'YYYY-MM-DD HH24:mi:ss') updatedate
+		  FROM (SELECT CEIL(rn / #{cri.perPageNum}) as page
+		             , rn
+		             , rno
+		             , bno
+		             , replytext
+		             , replyer
+		             , regdate
+		             , updatedate
+		          FROM (SELECT rownum as rn
+		                     , rno
+		                     , bno
+		                     , replytext
+		                     , replyer
+		                     , regdate
+		                     , updatedate
+		                  FROM reply
+		                 WHERE bno = #{bno}
+		                 ORDER BY rno DESC)
+		       )
+		 WHERE page = #{cri.page}
+	</select>
+	
+	<select id="count" resultType="int">
+		SELECT COUNT(bno)
+		  FROM reply
+		 WHERE bno = #{bno}
+	</select>
+	
+	<select id="getBno" resultType="int">
+		SELECT bno
+		  FROM reply
+		 WHERE rno = #{rno}
+	</select>
+</mapper>

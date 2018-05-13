@@ -1,0 +1,70 @@
+2018-05-03 16:01:05 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:01:06 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta2(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:01:06 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:01:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:01:35 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta2(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:01:53 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:01:53 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta3(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:01:53 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:05:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:05:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta4(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:05:51 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:05:51 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta5(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:05:51 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:06:30 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:06:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta6(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:06:31 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:06:38 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:06:38 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta6(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:08:24 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:08:25 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta7(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:08:25 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:15:05 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT userid , userpw , username , email , regdate , updatedate FROM member WHERE userid = ?  
+2018-05-03 16:15:06 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta(String) 
+2018-05-03 16:15:06 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-03 16:15:54 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT userid , userpw , username , email , regdate , updatedate FROM member WHERE userid = ?  
+2018-05-03 16:15:54 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta(String) 
+2018-05-03 16:15:55 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-03 16:15:55 [INFO ] [or.kosta.springmvc.member.MemberDAOTest:39] Member [userid=kosta, userpw=1234, username=코스타, email=kosta@gmail.co.kr, regdate=2018-05-03 15:54:21, updatedate=2018-05-03 15:54:21] 
+2018-05-03 16:18:58 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:18:58 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta8(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:18:58 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:19:42 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:19:42 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta8(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:19:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 16:19:58 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta8(String), 1235(String), 코스타2(String), kosta2@gmail.co.kr(String) 
+2018-05-03 16:20:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: UPDATE member SET userpw = ? , username = ? , email = ? WHERE userid = ?  
+2018-05-03 16:20:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 4444(String), 코스타Up(String), kosta@naver.com(String), kosta(String) 
+2018-05-03 16:20:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 16:20:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: DELETE FROM member WHERE userid = ?  
+2018-05-03 16:20:57 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta8(String) 
+2018-05-03 16:20:58 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 17:06:46 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing:  
+2018-05-03 17:07:32 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT userid , userpw , username , email , regdate , updatedate FROM member WHERE userid = ?  
+2018-05-03 17:07:32 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta(String) 
+2018-05-03 17:07:32 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-03 17:07:32 [INFO ] [or.kosta.springmvc.member.MemberDAOTest:55] Member [userid=kosta, userpw=4444, username=코스타Up, email=kosta@naver.com, regdate=2018-05-03 15:54:21, updatedate=2018-05-03 15:54:21] 
+2018-05-03 18:52:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: insert into board (title,content,writer) values(?,?,?)  
+2018-05-03 18:52:47 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 하이(String), 하이루(String), 사종찬(String) 
+2018-05-03 18:54:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: insert into board (bno,title,content,writer) values(?,?,?,?)  
+2018-05-03 18:54:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 1(Integer), 하이(String), 하이루(String), 사종찬(String) 
+2018-05-03 18:54:01 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 18:54:01 [INFO ] [or.kosta.springmvc.board.BoardTest:27] 하이루 
+2018-05-03 18:58:20 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT bno, title, content, writer, redate, viewcnt FROM board WHERE bno = # {bno}  
+2018-05-03 18:58:20 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-03 18:59:09 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT bno, title, content, writer, redate, viewcnt FROM board WHERE bno = ?  
+2018-05-03 18:59:09 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 1(Integer) 
+2018-05-03 18:59:36 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: SELECT bno, title, content, writer, regdate, viewcnt FROM board WHERE bno = ?  
+2018-05-03 18:59:36 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 1(Integer) 
+2018-05-03 18:59:37 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==      Total: 1 
+2018-05-03 18:59:37 [INFO ] [or.kosta.springmvc.board.BoardTest:32] Board [bno=1, title=하이, content=하이루, writer=사종찬, regdate=2018-05-03 18:54:01, viewcnt=0] 
+2018-05-03 19:04:56 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: UPDATE board SET title = # {title}, content = # {content} WHERE bno = # {bno}  
+2018-05-03 19:04:56 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  
+2018-05-03 19:05:30 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: UPDATE board SET title = ?, content = ? WHERE bno = ?  
+2018-05-03 19:05:30 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 하삼(String), 하삼루(String), 1(Integer) 
+2018-05-03 19:05:30 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 19:08:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: DELETE FROM board WHERE bno = ?  
+2018-05-03 19:08:26 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: 1(Integer) 
+2018-05-03 19:08:27 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
+2018-05-03 19:16:10 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: select bno,title,content,writer,regdate,viewcnt from board where bno > 0 order by bno desc , regdate desc  
+2018-05-03 19:16:10 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters:  

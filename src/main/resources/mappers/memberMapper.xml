@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="kr.or.kosta.springmvc.member.dao.MemberDAO">
+	<insert id="create" parameterType="kr.or.kosta.springmvc.member.domain.Member">
+			INSERT INTO member
+			       (
+			       	 userid
+			       , userpw
+			       , username
+			       , email
+			       
+			       ) VALUES (
+			         #{userid}
+			       , #{userpw}
+			       , #{username}
+			       , #{email}
+			       )
+	</insert>
+	<select id="read" parameterType="string" resultType="kr.or.kosta.springmvc.member.domain.Member">
+		SELECT userid
+		     , userpw
+		     , username
+		     , email
+		     , regdate
+		     , updatedate
+		  FROM member
+		 WHERE userid = #{userid}
+	</select>
+	
+	<update id="update" parameterType="kr.or.kosta.springmvc.member.domain.Member">
+		UPDATE member
+		   SET userpw = #{userpw}
+		     , username = #{username}
+		     , email = #{email}
+		 WHERE userid = #{userid}
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		DELETE 
+		  FROM member
+		 WHERE userid = #{userid}
+	</delete>
+	
+	<select id="isMember" parameterType="string" resultType="kr.or.kosta.springmvc.member.domain.Member">
+		SELECT userid
+		     , userpw
+		     , username
+		     , email
+		     , regdate
+		     , updatedate
+		  FROM member
+		 WHERE userid = #{userid}
+	</select>
+</mapper>

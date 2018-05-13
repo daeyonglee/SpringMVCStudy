@@ -1,0 +1,3 @@
+2018-05-03 15:54:21 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==>  Preparing: INSERT INTO member ( userid , userpw , username , email ) VALUES ( ? , ? , ? , ? )  
+2018-05-03 15:54:21 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] ==> Parameters: kosta(String), 1234(String), 코스타(String), kosta@gmail.co.kr(String) 
+2018-05-03 15:54:21 [DEBUG] [apache.ibatis.logging.jdbc.BaseJdbcLogger:159] <==    Updates: 1 
